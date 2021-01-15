@@ -10,9 +10,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: body(),
-    );
+    return testWidget;
   }
+  Widget testWidget = new MediaQuery(
+      data: new MediaQueryData(),
+      child: new MaterialApp(home: new body())
+  );
 }
 
